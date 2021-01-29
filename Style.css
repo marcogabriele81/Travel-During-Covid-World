@@ -310,10 +310,7 @@
     }
     .image-box {
       width: calc(33.3333% - 40px);
-    }
-    .image-box-Masks {
-      float:inherit   
-    }
+  
     
     }
     .photo-about p, .photo-contact p, .photo-contact-form {
