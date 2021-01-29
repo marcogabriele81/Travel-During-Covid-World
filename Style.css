@@ -311,6 +311,9 @@
     .image-box {
       width: calc(33.3333% - 40px);
     }
+    .image-box-Masks {
+    flex-wrap: wrap;   
+    }
     
     }
     .photo-about p, .photo-contact p, .photo-contact-form {
