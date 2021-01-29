@@ -121,6 +121,7 @@ img {
 }
 .site-header-left {
   display: inline-block;
+  z-index: 10;
 }
 .site-header-left li {
   line-height: 0;
