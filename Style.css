@@ -309,8 +309,10 @@
       min-height: 500px;
     }
     .image-box {
-     
+      width: 33% auto;
+      height: 20% auto;
       box-sizing: border-box;
+
     
     }
     .photo-about p, .photo-contact p, .photo-contact-form {
