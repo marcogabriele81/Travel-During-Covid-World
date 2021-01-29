@@ -309,9 +309,12 @@
       min-height: 500px;
     }
     .image-box {
-      width: 33% auto;
-      height: 20% auto;
+      
       box-sizing: border-box;
+
+      .image-box img {
+        width: 100%;
+        height: auto;
 
     
     }
