@@ -309,7 +309,7 @@
       min-height: 500px;
     }
     .image-box {
-      width: calc(33.3333% - 40px);
+      width: 0 auto;
   
     
     }
