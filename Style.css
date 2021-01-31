@@ -122,8 +122,7 @@ img {
 .site-header-left {
   display: inline-block;
   z-index: 10;
-  height: 0.2%;
-  width: 0.2%;
+
 }
 .site-header-left li {
   line-height: 0;
