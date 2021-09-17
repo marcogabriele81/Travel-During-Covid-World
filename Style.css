@@ -97,6 +97,15 @@ li {
 img {
   width: 100%;
 }
+img {
+  transition: -webkit-transform 0.25s ease;
+  transition: transform 0.25s ease;
+}
+
+img:active {
+  -webkit-transform: scale(2);
+  transform: scale(2);
+}
 
 /* 3. Structure Styles
 ======================================== */
@@ -173,7 +182,7 @@ button:hover {
   transition: opacity 0.5s ease;
 }
 .button:hover {
-  opacity: 0.75;
+  opacity: 0.65;
 }
 .button-primary {
   border: 1px solid #FFFFFF;
@@ -336,4 +345,26 @@ blockquote footer {
   .photo-contact-form input:nth-child(2), .photo-contact-form input:nth-child(4) {
     margin: 0 0 20px 2%;
   }
+ /*lightbox/
+ .row > .column {
+  padding: 0 8px;
 }
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create four equal columns that floats next to eachother */
+.column {
+  float: left;
+  width: 25%;
+}
+
+
+
+
+}
+
+
