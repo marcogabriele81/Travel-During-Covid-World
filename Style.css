@@ -11,27 +11,33 @@
 ======================================== */
 * {
   box-sizing: border-box;
+  
 }
 
 html {
   margin: 0 auto;
   overflow-x: hidden;
-  width: 100%;
+  min-width: 320px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
 body {
   margin: 0 auto;
   overflow-x: hidden;
-  width: 100%;
+  min-width: 320px;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   color: #495C69;
+  position: absolute;
+  
+  right:0px;
+  top: 0px;
 }
 .clearfix::after {
   content: " ";
   clear: both;
   display: table;
+  position: absolute;
 }
 
 /* 2. Typography Styles
@@ -51,6 +57,7 @@ h6 {
 h1 {
   font-size: calc(100px / 1.5);
   line-height: 0.85;
+  margin-top: 40px;
 }
 h2 {
   font-size: calc(65px / 1.5);
@@ -94,8 +101,7 @@ li {
   line-height: 23px;
   list-style: none;
 }
-img {
-  width: 100%;
+
 }
 img {
   transition: -webkit-transform 0.25s ease;
@@ -113,6 +119,8 @@ img:active {
   margin: 0 auto;
   max-width: 1280px;
   padding: 0 15px;
+
+
 }
 .container:before, .container:after {
   content: " ";
@@ -127,10 +135,14 @@ img:active {
   margin: 0 auto;
   max-width: 1280px;
   padding: 30px 1em;
-}
+
 .site-header-left {
   display: inline-block;
-  z-index: 10;
+  z-index: 1;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 
 }
 .site-header-left li {
@@ -139,6 +151,7 @@ img:active {
 .site-header-right {
   display: inline-block;
   float: right;
+  
 }
 .site-header-right li,
 .footer-right li {
@@ -147,18 +160,22 @@ img:active {
 .site-header-right li a {
   text-decoration: none;
   margin-left: 20px;
+  color:#fff
 }
 
+ 
 /* Site Footer */
 .footer {
   background-color: #FFEACC;
   color: #173042;
   padding: 30px;
   text-align: center;
+  
 }
 .footer-navigation {
   margin: 0 auto;
   max-width: 1280px;
+  
 }
 
 /* 5. Component Styles
@@ -213,6 +230,8 @@ textarea {
 .photo-hero {
   background-color: #42A5F5;
   min-height: 700px;
+  background-position: absolute;
+
 }
 .photo-hero-text {
   padding: 0 20px;
@@ -250,6 +269,7 @@ textarea {
   background-color: #B2843F;
   margin-top: -80px;
   padding-bottom: 80px;
+  clear: both;
 }
 blockquote p {
   font-family: 'Playfair Display', Georgia, serif;
@@ -309,6 +329,12 @@ blockquote footer {
   margin: 0 0 20px;
 }
 
+textarea {
+  width: 100%;
+  max-width: 100%;
+  min-width: 50%;
+  min-height: 150px;
+}
 
 @media (min-width: 585px) {
   .photo-hero {
@@ -345,26 +371,7 @@ blockquote footer {
   .photo-contact-form input:nth-child(2), .photo-contact-form input:nth-child(4) {
     margin: 0 0 20px 2%;
   }
- /*lightbox/
- .row > .column {
-  padding: 0 8px;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Create four equal columns that floats next to eachother */
-.column {
-  float: left;
-  width: 25%;
-}
 
 
-
-
-}
 
 
