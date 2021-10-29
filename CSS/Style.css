@@ -431,7 +431,7 @@ textarea {
   	opacity: 1;
 }
 
-@keyframes fadeIn {
+@keyframes FadeIn {
   from {
   	opacity: 0;
   }
