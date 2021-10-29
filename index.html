@@ -3,13 +3,17 @@
   
 <head>
   <title>My First Site | Journey Around the Covid World</title>
-  <link rel="stylesheet" href="Style.css"/>
+  <link rel="stylesheet" type="text/css" href="CSS/Style.css"/>
+  <link rel="stylesheet" type="text/css" href="CSS/lightbox.min.css">
+  <script src="JS/main.js"></script>
+  <script src=JS/jquery-3.6.0.min.js></script>
+  <script src="JS/lightbox.min.js"></script>
   <link rel="icon" href="Resources/Images/mask_opt.png" sizes="90x90">
   <!-- Meta -->
   <meta charset="utf-8">
   <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1 user-scalable=yes">
-  <script src="main.js"></script>
+ 
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Playfair+Display:400,900" rel="stylesheet">
@@ -39,47 +43,52 @@
     <div class="container">
       <div class="photo-hero-text">
         <h1>Journey Around the <span>Covid</span> World</h1>
-        <p>Hello, I'm Marco. I'm a photographer who loves to travel and capture the beauty I'm blessed to witness with my camera.</p>
+        <div class=Typewriter>
+           <p>Hello, I'm Marco.</p>
+           <p>I'm a photographer who loves to travel and capture the beauty I'm blessed to witness with my camera.</p>
+       </div>
         <a href="#" class="button button-primary">View My Work</a>
       </div>
     </div>
   </section>
   <!-- Site Main Content -->
-  <main role="main">
+  
     <!-- PHOTO GRID -->
-    <!--section role="region" aria-label="photo-grid" class="photo-grid"-->
-    <div class="image-box">
-            <img src="Resources/Images/20201103_135738_opt.jpg" class="zoom"  />
+    <main>
+    <section role="region" aria-label="photo-grid">
+      <div class="photo-grid">
+        <div class="image-box">
+            <a href="Resources/Images Full Size/20201103_135738.jpg"><img src="Resources/Images/20201103_135738_opt.jpg" ></a>
+          </div>
+          <div class="image-box">
+          <a href="Resources/Images Full Size/20200924_135903.jpg"><img src="Resources/Images/20200924_135903_opt.jpg" class="zoom"></a>
+        </div>
+        <div class="image-box">
+          <a href="Resources/Images Full Size/0dwfDLrDQe2BeK_sHF6Pmw.jpg"><img src="Resources/Images/0dwfDLrDQe2BeK_sHF6Pmw_opt.jpg" class="zoom"></a>
+        </div>
+        <div class="image-box">
+          <a href="Resources/Images Full Size/20201030_132309.jpg"><img src="Resources/Images/20201030_132309_opt.jpg" class="zoom"> </a>
+        </div>
+        <div class="image-box">
+            <a href="Resources/Images Full Size/7VnAxLTMS7mfSRNE0zL4aA.jpg"><img src="Resources/Images/7VnAxLTMS7mfSRNE0zL4aA_opt.jpg" class="zoom"> </a>
           </div>
         <div class="image-box">
-          <img src="Resources/Images/20200924_135903_opt.jpg" class="zoom"  />
+          <a href="Resources/Images Full Size/20201030_172324.jpg"><img src="Resources/Images/20201030_172324_opt.jpg" class="zoom"></a>
+                 </div>
+        <div class="image-box">
+          <a href="Resources/Images Full Size/amnASL-ET5-S3SnQL17m7A.jpg"><img src="Resources/Images/amnASL-ET5-S3SnQL17m7A_opt.jpg" class="zoom"> </a>
         </div>
         <div class="image-box">
-          <img src="Resources/Images/0dwfDLrDQe2BeK_sHF6Pmw_opt.jpg" class="zoom"  />
+          <a href="Resources/Images Full Size/B2OuPd3HRs63vEA-yaeStQ.jpg"><img src="Resources/Images/B2OuPd3HRs63vEA-yaeStQ_opt.jpg" class="zoom"></a>
         </div>
         <div class="image-box">
-          <img src="Resources/Images/20201030_132309_opt.jpg" class="zoom" />
-        </div>
-        <div class="image-box">
-            <img src="Resources/Images/7VnAxLTMS7mfSRNE0zL4aA_opt.jpg" class="zoom" />
-          </div>
-        <div class="image-box">
-          <img src="Resources/Images/20201030_172324_opt.jpg" class="zoom"  />
-          </div>
-        <div class="image-box">
-          <img src="Resources/Images/amnASL-ET5-S3SnQL17m7A_opt.jpg" class="zoom"  />
-        </div>
-        <div class="image-box">
-          <img src="Resources/Images/B2OuPd3HRs63vEA-yaeStQ_opt.jpg" class="zoom"  />
-        </div>
-        <div class="image-box">
-          <img src="Resources/Images/sCRjl10uRSWCierfLVJH_Q_opt.jpg" class="zoom" />
-        </div> 
-  </div>
-</div>
+          <a href="Resources/Images Full Size/sCRjl10uRSWCierfLVJH_Q.jpg"><img src="Resources/Images/sCRjl10uRSWCierfLVJH_Q_opt.jpg" class="zoom" />
         </div>
       </div>
+    </div>
+  </div>
     </section>
+  </main>
 
     <!-- BLOCKQUOTE -->
     <section role="region" class="photo-blockquote">
