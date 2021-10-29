@@ -114,19 +114,19 @@ li {
 
 .Typewriter {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
+  border-right: .025em solid orange; /* The typwriter cursor */
   white-space: wrap;  /*Keeps the content on a single line */
   margin-inline-start:0 auto ; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
+  letter-spacing: .1.5em; /* Adjust as needed */
   animation: 
-    typing 3.5s steps(40, end),
+    typing 1s steps(40, end),
     blink-caret .75s step-end infinite;
 }
 
 /* The typing effect */
 @keyframes typing {
   from { width: 0 }
-  to { width: 100% }
+  to { width: 30% }
 }
 
 /* The typewriter cursor effect */
@@ -418,3 +418,24 @@ textarea {
 
     transform: rotate(360deg);
   }
+
+  #onclick:active {
+
+    transform: rotate(360deg);
+  }
+
+  /* Just add .fade-in class to element */
+
+.FadeIn {
+	animation: fadeIn 10s;
+  	opacity: 1;
+}
+
+@keyframes fadeIn {
+  from {
+  	opacity: 0;
+  }
+  to {
+ 	opacity: 1;
+  }
+}
