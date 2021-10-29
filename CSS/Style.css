@@ -408,3 +408,13 @@ textarea {
   .photo-contact-form input:nth-child(2), .photo-contact-form input:nth-child(4) {
     margin: 0 0 20px 2%;
   }
+
+  #onclick {
+    transition: transform .7s ease-in-out;
+
+  }
+
+  #onclick:hover {
+
+    transform: rotate(360deg);
+  }
