@@ -4,10 +4,7 @@
 <head>
   <title>My First Site | Journey Around the Covid World</title>
   <link rel="stylesheet" type="text/css" href="CSS/Style.css"/>
-  <link rel="stylesheet" type="text/css" href="CSS/lightbox.min.css">
   <script src="JS/main.js"></script>
-  <script src=JS/jquery-3.6.0.min.js></script>
-  <script src="JS/lightbox.min.js"></script>
   <link rel="icon" href="Resources/Images/mask_opt.png" sizes="90x90">
   <!-- Meta -->
   <meta charset="utf-8">
@@ -20,14 +17,12 @@
 
 </head>
 <body>
-
-<div class="top-section">
   <!-- Site Header -->
-  <section role="region" class="photo-hero">
-    <header role="banner" aria-label="site navigation" class="header">
+  <section class="photo-hero">
+    <header aria-label="site navigation" class="header">
       <!-- Site Navigation -->
-      <nav role="navigation" class="site-navigation">
-<img id= "onclick" onclick="changeimage()" src="Resources/Images/covid19masked.png">
+      <nav class="site-navigation">
+<img id= "onclick" onclick="changeimage()" src="Resources/Images/covid19masked.png" alt="coronavirus cartoon image">
 
         <ul class="site-header-right">
           <li>
@@ -35,60 +30,142 @@
             <p><a href="#aboutme">About</a></p>
           </li>
           <li>
-            <a href="#contactme">Contact</a>
+            <p><a href="#contactme">Contact</a></p>
+          </li>
+          <li>
+            <p><a href="TodoList.html">Things to bring on your trip</a></p>
           </li>
         </ul>
+    
       </nav>
     </header>
     <div class="container">
       <div class="photo-hero-text">
         <h1>Journey Around the <span>Covid</span> World</h1>
-        <div class=Typewriter>
+        <!-- <div class=Typewriter> -->
            <p>Hello, I'm Marco.
            I'm a photographer who loves to travel and capture memorable moments with my camera</p>
        </div>
-        <a href="#anchor-ViewWork" class="button button-primary">View My Work</a>
+        
       </div>
     </div>
   </section>
   <!-- Site Main Content -->
   
-    <!-- PHOTO GRID -->
     <main>
-    <section role="region" aria-label="photo-grid">
-      <div class="photo-grid">
-        <a id="anchor-ViewWork"></a>
-        <div class="image-box">
-            <a href="Resources/Images Full Size/20201103_135738.jpg"><img src="Resources/Images/20201103_135738_opt.jpg" ></a>
+      <section role="region" aria-label="photo-grid">
+        <!-- <div class="wrapper"> -->
+          <a id="anchor-ViewWork">
+          <!-- <div class="image-box"> -->
+                  <div class="row">
+                      <div class="column">
+                        <img src="Resources/Images/20200924_135903_opt.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                      </div>
+                              <div class="column">
+                                   <img src="Resources/Images/20201030_132309_opt.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+                                 </div>
+                                      <div class="column">
+                                          <img src="Resources/Images/20201030_172324_opt.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+                                        </div>
+                                <div class="column">
+                                  <img src="Resources/Images/20201103_135738_opt.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+                                  </div>
+                          <div class="column">
+                              <img src="Resources/Images/0dwfDLrDQe2BeK_sHF6Pmw_opt.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+                            </div>
+                                 <div class="column">
+                                     <img src="Resources/Images/7VnAxLTMS7mfSRNE0zL4aA_opt.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+                                   </div>
+                              <div class="column">
+                                  <img src="Resources/Images/amnASL-ET5-S3SnQL17m7A_opt.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+                                  </div>
+                               <div class="column">
+                                    <img src="Resources/Images/sCRjl10uRSWCierfLVJH_Q_opt.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+                                    </div>
+                      </div>
+                      </a>
+         </div>
+      <!-- </div> -->
+      
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+      
+          <div class="mySlides">
+            <div class="numbertext">1 / 8</div>
+            <img src="Resources/Images Full Size/20200924_135903.jpg" style="width:100%">
           </div>
-          <div class="image-box">
-          <a href="Resources/Images Full Size/20200924_135903.jpg"><img src="Resources/Images/20200924_135903_opt.jpg" class="zoom"></a>
-        </div>
-        <div class="image-box">
-          <a href="Resources/Images Full Size/0dwfDLrDQe2BeK_sHF6Pmw.jpg"><img src="Resources/Images/0dwfDLrDQe2BeK_sHF6Pmw_opt.jpg" class="zoom"></a>
-        </div>
-        <div class="image-box">
-          <a href="Resources/Images Full Size/20201030_132309.jpg"><img src="Resources/Images/20201030_132309_opt.jpg" class="zoom"> </a>
-        </div>
-        <div class="image-box">
-            <a href="Resources/Images Full Size/7VnAxLTMS7mfSRNE0zL4aA.jpg"><img src="Resources/Images/7VnAxLTMS7mfSRNE0zL4aA_opt.jpg" class="zoom"> </a>
+      
+          <div class="mySlides">
+            <div class="numbertext">2 / 8</div>
+            <img src="Resources/Images Full Size/20201030_132309.jpg" style="width:100%">
           </div>
-        <div class="image-box">
-          <a href="Resources/Images Full Size/20201030_172324.jpg"><img src="Resources/Images/20201030_172324_opt.jpg" class="zoom"></a>
-                 </div>
-        <div class="image-box">
-          <a href="Resources/Images Full Size/amnASL-ET5-S3SnQL17m7A.jpg"><img src="Resources/Images/amnASL-ET5-S3SnQL17m7A_opt.jpg" class="zoom"> </a>
-        </div>
-        <div class="image-box">
-          <a href="Resources/Images Full Size/B2OuPd3HRs63vEA-yaeStQ.jpg"><img src="Resources/Images/B2OuPd3HRs63vEA-yaeStQ_opt.jpg" class="zoom"></a>
-        </div>
-        <div class="image-box">
-          <a href="Resources/Images Full Size/sCRjl10uRSWCierfLVJH_Q.jpg"><img src="Resources/Images/sCRjl10uRSWCierfLVJH_Q_opt.jpg" class="zoom"></a>
+      
+          <div class="mySlides">
+            <div class="numbertext">3 / 8</div>
+            <img src="Resources/Images Full Size/20201030_172324.jpg" style="width:100%">
+          </div>
+          
+          <div class="mySlides">
+            <div class="numbertext">4 / 8</div>
+            <img src="Resources/Images Full Size/20201103_135738.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">5 / 8</div>
+            <img src="Resources/Images Full Size/0dwfDLrDQe2BeK_sHF6Pmw.jpg" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">6 / 8</div>
+            <img src="Resources/Images Full Size/7VnAxLTMS7mfSRNE0zL4aA.jpg" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">7 / 8</div>
+            <img src="Resources/Images Full Size/amnASL-ET5-S3SnQL17m7A.jpg" style="width:100%">
+          </div>
+          
+          <div class="mySlides">
+            <div class="numbertext">8 / 8</div>
+            <img src="Resources/Images Full Size/sCRjl10uRSWCierfLVJH_Q.jpg" style="width:100%">
+          </div>
+          
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+      
+      
+          <div class="column">
+            <img class="demo cursor" src="Resources/Images/20200924_135903_small.jpg" style="width:100%" onclick="currentSlide(1)" alt="Termoli's Trabucco">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="Resources/ImagesSmall/20201030_132309_small.jpg" style="width:100%" onclick="currentSlide(2)" alt="Vasto's Trabucco">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="Resources/ImagesSmall/20201030_172324_small.jpg" style="width:100%" onclick="currentSlide(3)" alt="Sunset in Vasto">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="Resources/ImagesSmall/20201103_135738_small.jpg" style="width:100%" onclick="currentSlide(4)" alt="Kiddos Running on Termoli's shore">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="Resources/Images/0dwfDLrDQe2BeK_sHF6Pmw_small.jpg" style="width:100%" onclick="currentSlide(5)" alt="Sunset in Larino Countryside">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="Resources/ImagesSmall/7VnAxLTMS7mfSRNE0zL4aA_small.jpg" style="width:100%" onclick="currentSlide(6)" alt="Altare della Patria in Rome">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="Resources/ImagesSmall/amnASL-ET5-S3SnQL17m7A_small.jpg" style="width:100%" onclick="currentSlide(7)" alt="Sunset in Larino">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="Resources/ImagesSmall/sCRjl10uRSWCierfLVJH_Q_small.jpg" style="width:100%" onclick="currentSlide(8)" alt="Larino's countryside road">
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-    </section>
+      
   </main>
 
     <!-- BLOCKQUOTE -->
@@ -112,12 +189,12 @@
     </section>
 
     <!-- CONTACT ME -->
-    <section role="region" class="photo-contact" action="contactme.php">
+    <section role="region" class="photo-contact" action="contactme.php" style="padding-to;padding-top: 0px;">
       <div class="container">
         <?php if(!empty($statusMsg)){ ?>
           <p class="statusMsg <?php echo !empty($msgClass)?$msgClass:''; ?>"><?php echo $statusMsg; ?></p>
       <?php } ?>
-        <h2 id=contactme> Contact Me </h2>
+        <h2 id="contactme" style="margin-top: 75px;"> Contact Me </h2>
         <p>Are you looking for a skilled photographer to capture your family, special day, or make professional headshots? Then look no further.</p>
         <form class="photo-contact-form" action="" method="post">
           <input type="name" placeholder="Full Name" required="">
@@ -126,6 +203,7 @@
           <input type="text" placeholder="Requested Date" required="">
           <textarea placeholder="Something"></textarea>
           <button type="submit" class="button button-primary">Send Request</button>
+          <a href="#anchor-ViewWork" class="button button-primary">View My Work</a>
         </form>
       </div>
     </section>
@@ -143,5 +221,6 @@
       </ul>
     </div>
   </footer>
+      </div>
 </body>
 </html>
