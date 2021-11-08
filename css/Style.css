@@ -387,19 +387,43 @@ textarea {
     min-height: 500px;
   }
 
-  .demo.cursor
+  img.demo.cursor
   {
     display: block;
 }
 
 @media (max-width: 500px) 
 {
-    .demo cursor: ;
+    img.demo.cursor
     {
         display: none;
     }
 }
-    
+.modal-content
+{
+  display: block;
+}
+
+@media (max-width: 500px) 
+{
+  .modal-content
+  {
+      display: none;
+  }
+}
+
+#myModal.modal
+{
+  display: none;
+}
+
+@media (max-width: 500px) 
+{
+  #myModal.modal
+  {
+      display: none;
+  }
+}
   
   .image-box {
     width: calc(33.3333% - 40px);
@@ -663,5 +687,41 @@ section.photo-about {
   .mySlides
   {
     display: none;
+  }
+}
+
+.numbertext{
+  display: block;
+}
+@media (max-width:640px)
+{
+  .numbertext
+  {
+    display: none;
+  }
+}
+
+.mySlides
+  {
+    display: none;
+  }
+}
+
+myModal.modal{
+  display: block;
+}
+@media (max-width:640px)
+{
+  myModal.modal
+  {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+
+  #myModal.modal {
+      display:none;
   }
 }

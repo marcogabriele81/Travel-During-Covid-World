@@ -7,6 +7,17 @@ document.getElementById("onclick").src="Resources/Images/covid19masked.png"
 
 // // // Lightbox Gallery 
 
+#myModal.modal{
+  display: block;
+}
+
+@media (max-width: 500px) 
+{
+  #myModal.modal
+  {
+      display: none;
+  }
+}
 
 //     lightbox.option({
 //       'resizeDuration': 200,
