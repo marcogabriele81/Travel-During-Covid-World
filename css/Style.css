@@ -386,6 +386,21 @@ textarea {
   .photo-hero {
     min-height: 500px;
   }
+
+  .demo.cursor
+  {
+    display: block;
+}
+
+@media (max-width: 500px) 
+{
+    .demo cursor: ;
+    {
+        display: none;
+    }
+}
+    
+  
   .image-box {
     width: calc(33.3333% - 40px);
     grid-auto-rows: 100px;
@@ -398,6 +413,7 @@ textarea {
 @media (min-width: 1024px) {
   .photo-hero {
     min-height: 700px;
+    display: none;
   }
   .photo-hero-text {
     width: 70%;
