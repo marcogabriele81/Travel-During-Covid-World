@@ -413,7 +413,7 @@ textarea {
 @media (min-width: 1024px) {
   .photo-hero {
     min-height: 700px;
-    display: none;
+
   }
   .photo-hero-text {
     width: 70%;
