@@ -654,3 +654,14 @@ section.photo-about {
 }
 }
 
+/* remove slideshow from mobile */
+.mySlides{
+  display: block;
+}
+@media (max-width:640px)
+{
+  .mySlides
+  {
+    display: none;
+  }
+}
