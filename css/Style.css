@@ -218,7 +218,6 @@ display: flex;
   color: #173042;
   padding: 30px;
   text-align: center;
-  background-color: #FFEACC;
   color: #173042;
   padding: 30px;
   text-align: center;
@@ -230,8 +229,17 @@ display: flex;
 }
 .footer-navigation {
   margin: 0 auto;
-  max-width: 1280px;
-  
+  width: 100%;
+  height: auto;
+  background-color: #FFEACC;
+  bottom:0;
+  left:0;
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+    grid-auto-rows: 100px;
+    text-allign: center;
+        height: auto;
 }
 
 /* 5. Component Styles
@@ -436,7 +444,7 @@ textarea {
     min-height: 500px;
   }
 
-  img.demo.cursor
+  /* img.demo.cursor
   {
     display: block;
 }
@@ -476,7 +484,7 @@ textarea {
   
   .image-box {
     width: calc(33.3333% - 40px);
-    grid-auto-rows: 100px;
+    grid-auto-rows: 100px; */
 
   }
   .photo-about p, .photo-contact p, .photo-contact-form {
